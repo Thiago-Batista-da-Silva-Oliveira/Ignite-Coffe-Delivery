@@ -1,5 +1,5 @@
 import teste from '../../../../assets/coffee-delivery-logo.svg'
-import {CoffeeCardContainer, Tags} from './styles'
+import {CoffeeCardContainer, Description, Name, Tags} from './styles'
 
 export function CoffeeCard () {
     return (
@@ -9,6 +9,10 @@ export function CoffeeCard () {
              <span>tradicional</span>
              <span>com leite</span>
            </Tags>
+           <Name>Expresso Tradicional</Name>
+           <Description>
+            O tradicional café feito com água quente e grãos moídos
+           </Description>
         </CoffeeCardContainer>
     )
 }

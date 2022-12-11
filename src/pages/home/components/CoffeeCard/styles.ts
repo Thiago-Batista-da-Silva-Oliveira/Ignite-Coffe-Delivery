@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { RegularText, TitleText } from "../../../../components/Typography";
 
 export const CoffeeCardContainer = styled.div `
 width: 100%;
@@ -10,6 +11,7 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 padding-top: 0;
+text-align: center;
 
 img {
     width: 7.5rem;
@@ -36,4 +38,19 @@ export const Tags = styled.div `
     border-radius: 999px;
     font-weight: 700;
  }
+`
+
+export const Name = styled(TitleText).attrs({
+    size: "s",
+    color: "subtitle",
+    weight: "700",
+}) `
+ margin-bottom: 0.5rem;
+`
+
+export const Description = styled(RegularText).attrs({
+    size: "s",
+    color: "label"
+}) `
+ margin-bottom: 2rem;
 `
